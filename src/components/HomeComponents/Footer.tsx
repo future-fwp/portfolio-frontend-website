@@ -3,7 +3,7 @@ import { Contact } from "../utils/data";
 import "./styled/Footer.css";
 const Footer = () => {
 	return (
-		<footer className="max-w-[1200px] px-5 pt-5 flex flex-col gap-3 mx-auto">
+		<footer className="max-w-[1200px] md:px-8 px-6 lg:px-10 lg:py-16 md:py-12 py-10 flex flex-col gap-3 mx-auto">
 			<h2>Contact me</h2>
 			<ul>
 				{Contact.map((contact) => {
