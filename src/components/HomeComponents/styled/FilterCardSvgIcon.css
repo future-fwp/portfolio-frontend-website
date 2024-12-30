@@ -1,0 +1,13 @@
+/* FilterCardSvgIcon.css */
+
+@tailwind components;
+
+@layer components {
+	.filtercard {
+		svg,
+		img {
+			width: 20px;
+			height: 20px;
+		}
+	}
+}

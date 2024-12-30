@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply text-white bg-black overflow-x-hidden;
+}
+
+h1 {
+	@apply text-[40px] font-[700] leading-normal;
+}
+
+h2 {
+	@apply text-[32px] font-[600];
+}
+
+h3 {
+	@apply text-[24px] font-[500];
+}
+
+h4 {
+	@apply text-[20px] font-[600];
+}
+
+h5 {
+	@apply text-[18px] font-[500];
+}
+h6 {
+	@apply text-[16px] font-[500];
+}
+
+/* span {
+	@apply text-[14px] font-[600] leading-5;
+} */
+
+p {
+	@apply text-[18px] font-[500];
+}

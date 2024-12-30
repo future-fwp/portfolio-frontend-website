@@ -1,0 +1,8 @@
+@tailwind components;
+@layer components {
+	.techStack svg,
+	.techStack img {
+		width: 80px;
+		height: 40px;
+	}
+}
