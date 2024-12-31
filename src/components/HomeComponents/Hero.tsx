@@ -1,4 +1,4 @@
-import React from "react";
+
 import ProfileImage from "../../assets/IMG_1834-removebg-preview 1.png";
 import Circle from "../ReusableComponents/Geometry/Circle";
 import { TypeAnimation } from "react-type-animation";

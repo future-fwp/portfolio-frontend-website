@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { techStack } from "../utils/data";
 import "./styled/TechStack.css";
-import TriangleRotate140deg from "../ReusableComponents/Geometry/TriangleRotate140deg";
-import Meteorite from "../ReusableComponents/Geometry/Meteorite";
+
 
 // Custom Hook
 const useDivideStack = (stackType: string) => {

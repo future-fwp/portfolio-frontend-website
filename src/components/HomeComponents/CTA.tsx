@@ -1,4 +1,4 @@
-import React from "react";
+
 import CTAIcon from "../assets/CTA/CTAIcon";
 import "./styled/CTA.css";
 const CTA = () => {

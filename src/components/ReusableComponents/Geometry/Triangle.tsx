@@ -1,4 +1,3 @@
-import React from "react";
 
 const Triangle = ({ addlayout }: { addlayout: string }) => {
 	return (

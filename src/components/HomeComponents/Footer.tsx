@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Contact } from "../utils/data";
 import "./styled/Footer.css";
 const Footer = () => {

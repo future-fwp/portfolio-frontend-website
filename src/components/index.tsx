@@ -1,4 +1,4 @@
-import React from "react";
+
 import Navbar from "./HomeComponents/Navbar";
 import Hero from "./HomeComponents/Hero";
 import Achievement from "./HomeComponents/Achievement";

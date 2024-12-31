@@ -1,4 +1,4 @@
-import React from "react";
+
 import Flag from "../../../assets/material-symbols_flag.svg";
 const Timeline = ({
 	year,

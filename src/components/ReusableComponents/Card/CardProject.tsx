@@ -31,6 +31,7 @@ const CardProject: React.FC<Props> = ({ titleProject, description, TechStack, li
 				<div>
 					<h3>{titleProject}</h3>
 					<p className="mb-[1rem]">{description}</p>
+					<a href={linkDeployedWebsite}>Click me</a>
 				</div>
 
 				<ul className="flex gap-3 flex-wrap">
@@ -40,6 +41,7 @@ const CardProject: React.FC<Props> = ({ titleProject, description, TechStack, li
 								className="px-2 py-1 rounded-full border"
 								key={JSON.stringify(tech) + index}
 							>
+								
 								<span>{tech}</span>
 							</li>
 						);

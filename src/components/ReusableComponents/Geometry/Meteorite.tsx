@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 
 const Meteorite = ({ addlayout }: { addlayout: string }) => {
 	const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -18,14 +18,14 @@ const Meteorite = ({ addlayout }: { addlayout: string }) => {
 			}));
 		};
 
-		const handleMouseMove = (e) => {
+		const handleMouseMove = (e:any) => {
 			if (!meteoriteRef.current) return;
 
-			const { clientX, clientY } = e;
-			const { innerWidth, innerHeight } = window;
+			const { clientX } = e;
+			const { innerWidth } = window;
 
 			const mouseXPercent = clientX / innerWidth - 0.5;
-			const mouseYPercent = clientY / innerHeight - 0.5;
+			// const mouseYPercent = clientY / innerHeight - 0.5;
 			const newX = mouseXPercent * 30;
 
 			setPosition((prev) => ({

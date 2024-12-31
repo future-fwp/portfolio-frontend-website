@@ -1,11 +1,11 @@
-import { useState, useRef, useEffect } from "react";
-import CardAchievement from "../ReusableComponents/Card/CardAchievement";
+import { useState,  } from "react";
+
 import { projects, techStack } from "../utils/data";
 import CardProject from "../ReusableComponents/Card/CardProject";
 import FilterLanguagesButton from "../ReusableComponents/Card/FilterLanguages";
 import "./styled/FilterCardSvgIcon.css";
 import TriangleRotate140deg from "../ReusableComponents/Geometry/TriangleRotate140deg";
-import { motion, useInView, AnimatePresence } from "framer-motion";
+import { motion,AnimatePresence } from "framer-motion";
 
 const Project = () => {
 	const [selectedTechStack, setSelectedTechStack] = useState<string[]>([]);
@@ -54,7 +54,7 @@ const Project = () => {
 			</section>
 			<ul className="grid min-[600px]:grid-cols-2 gap-6 lg:grid-cols-3">
 				<AnimatePresence>
-					{filteredProjects.map((project, index) => {
+					{filteredProjects.map((project, _) => {
 						// Removed index here
 
 						// Assuming project.project is unique. If not, use a unique ID

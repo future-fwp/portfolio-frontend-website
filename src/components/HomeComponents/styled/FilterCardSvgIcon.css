@@ -1,7 +1,5 @@
 /* FilterCardSvgIcon.css */
 
-@tailwind components;
-
 @layer components {
 	.filtercard {
 		svg,

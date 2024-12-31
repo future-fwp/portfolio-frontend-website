@@ -1,4 +1,4 @@
-import React from "react";
+
 import Nextjs from "../../../assets/file-type-light-next-icon-96x96-r4nneev5_1-removebg-preview.png";
 import TailwindCss from "../../../assets/file-type-tailwind-icon-96x58-zlnw12p6_1-removebg-preview.png";
 export const HtmlIcon = (
