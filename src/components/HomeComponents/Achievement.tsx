@@ -1,37 +1,39 @@
-
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { motion, useInView, useMotionValue, useSpring } from "framer-motion";
+import { useRef, useEffect } from "react";
 import { Achievements } from "../utils/data";
 import Meteorite from "../ReusableComponents/Geometry/Meteorite";
 
-const AnimatedCounter = ({ value }: { value: any }) => {
-	const ref = useRef(null);
+const AnimatedCounter = ({ value }: { value: number }) => {
+	const ref = useRef<HTMLSpanElement>(null);
 	const isInView = useInView(ref, { once: true });
+	const motionValue = useMotionValue(0);
+	const springValue = useSpring(motionValue, {
+		damping: 50,
+		stiffness: 100
+	});
+
+	useEffect(() => {
+		if (isInView) {
+			motionValue.set(value);
+		}
+	}, [isInView, value, motionValue]);
+
+	useEffect(() => {
+		springValue.on("change", (latest) => {
+			if (ref.current) {
+				ref.current.textContent = Math.floor(latest).toString();
+			}
+		});
+	}, [springValue]);
 
 	return (
 		<motion.span
 			ref={ref}
 			initial={{ opacity: 0 }}
-			animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+			animate={{ opacity: isInView ? 1 : 0 }}
 			transition={{ duration: 0.2 }}
 		>
-			<motion.span
-				initial={{ opacity: 0 }}
-				animate={
-					isInView
-						? {
-								opacity: 1,
-								count: parseInt(value),
-						  }
-						: { count: 0 }
-				}
-				transition={{ duration: 2, delay: 0.2 }}
-				onUpdate={({ count }) => {
-					if (ref.current) {
-						ref.current.textContent = Math.floor(count).toString();
-					}
-				}}
-			/>
+			0
 		</motion.span>
 	);
 };

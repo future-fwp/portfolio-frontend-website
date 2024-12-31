@@ -1,6 +1,5 @@
 /* FilterCardSvgIcon.css */
 
-@layer components {
 	.filtercard {
 		svg,
 		img {
@@ -8,4 +7,4 @@
 			height: 20px;
 		}
 	}
-}
+
