@@ -1,50 +1,36 @@
-# React + TypeScript + Vite
+# Portfolio Frontend Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This project is a personal portfolio website built with React and TypeScript. It showcases various achievements, projects, and skills, providing an interactive experience for visitors.
 
-Currently, two official plugins are available:
+## Features
+- **Responsive Design**: The website is designed to be mobile-friendly and responsive across different devices.
+- **Animated Counters**: Achievements are displayed with animated counters that increase as the user scrolls into view.
+- **Dynamic Content**: Utilizes data from a centralized file to manage achievements and project information.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Components
+- **Navbar**: Navigation bar to access different sections of the portfolio.
+- **Hero**: Introduction section with a brief overview.
+- **Achievement**: Displays a list of achievements with animated counters.
+- **TechStack**: Showcases the technologies used in the projects.
+- **Project**: Highlights various projects with descriptions and links.
+- **EduExp**: Displays educational background and experiences.
+- **CTA**: Call to action section encouraging users to get in touch.
+- **Footer**: Contains copyright and additional links.
 
-## Expanding the ESLint configuration
+## Installation
+To run this project locally, follow these steps:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+2. Navigate to the project directory:
+   ```bash
+   cd portfolio-frontend-website
 
-- Configure the top-level `parserOptions` property like this:
+3. Install the dependencies:
+   ```bash
+   npm install
+4.  Start the development server
+```npm run dev
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
