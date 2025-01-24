@@ -1,6 +1,6 @@
 import { motion, useInView, useMotionValue, useSpring } from "framer-motion";
 import { useRef, useEffect } from "react";
-import { Achievements } from "../utils/data";
+import { Achievements } from "../../libs/data";
 import Meteorite from "../ReusableComponents/Geometry/Meteorite";
 
 const AnimatedCounter = ({ value }: { value: number }) => {
@@ -9,7 +9,7 @@ const AnimatedCounter = ({ value }: { value: number }) => {
 	const motionValue = useMotionValue(0);
 	const springValue = useSpring(motionValue, {
 		damping: 50,
-		stiffness: 100
+		stiffness: 100,
 	});
 
 	useEffect(() => {
@@ -44,6 +44,7 @@ const Achievement = () => {
 
 	return (
 		<div
+			id="about"
 			ref={sectionRef}
 			className="grid md:grid-cols-2 lg:grid-cols-3 px-5 py-10 max-w-[1200px] mx-auto relative"
 		>

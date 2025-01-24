@@ -1,4 +1,4 @@
-import  {  useState } from "react";
+import { useState } from "react";
 
 const Navbar = () => {
 	const [open, setOpen] = useState(false);
@@ -11,19 +11,19 @@ const Navbar = () => {
 				</div>
 				<ul className="max-md:hidden md:flex justify-center items-center">
 					<li className=" px-2 py-2">
-						<a href="">Home</a>
+						<a href="#home">Home</a>
 					</li>
 					<li className="px-2 py-2">
-						<a href="">About</a>
+						<a href="#about">About</a>
 					</li>
 					<li className="px-2 py-2">
-						<a href="">Skill</a>
+						<a href="#skill">Skill</a>
 					</li>
 					<li className="px-2 py-2">
-						<a href="">Project</a>
+						<a href="#project">Project</a>
 					</li>
 					<li className="px-2 py-2">
-						<a href="">Contact me</a>
+						<a href="#footer">Contact me</a>
 					</li>
 				</ul>
 				<div
@@ -57,19 +57,19 @@ const Navbar = () => {
 				}`}
 			>
 				<li className=" px-2 py-2">
-					<a href="">Home</a>
+					<a href="#home">Home</a>
 				</li>
 				<li className="px-2 py-2">
-					<a href="">About</a>
+					<a href="#about">About</a>
 				</li>
 				<li className="px-2 py-2">
-					<a href="">Skill</a>
+					<a href="#skill">Skill</a>
 				</li>
 				<li className="px-2 py-2">
-					<a href="">Project</a>
+					<a href="#project">Project</a>
 				</li>
 				<li className="px-2 py-2">
-					<a href="">Contact me</a>
+					<a href="#footer">Contact me</a>
 				</li>
 			</ul>
 		</>

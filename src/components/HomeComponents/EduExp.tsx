@@ -1,15 +1,14 @@
-
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Timeline from "../ReusableComponents/Card/Timeline";
-import { Experience, timeLine } from "../utils/data";
+import { Experience, timeLine } from "../../libs/data";
 
 import "./styled/EduExp.css";
 import { EducationIcon, ExperienceIcon } from "../assets/IconExperience/ExpEdu";
 import Meteorite from "../ReusableComponents/Geometry/Meteorite";
 
 // Animated Timeline Item component
-const AnimatedTimeline = ({ children, index, delay = 0 }:{children:any, index:number, delay?:number}) => {
+const AnimatedTimeline = ({ children, index, delay = 0 }: { children: any; index: number; delay?: number }) => {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: true, margin: "-50px" });
 
@@ -30,7 +29,7 @@ const AnimatedTimeline = ({ children, index, delay = 0 }:{children:any, index:nu
 };
 
 // Animated Section Title
-const AnimatedTitle = ({ children, delay = 0 }:{children:React.ReactNode, delay?:number}) => {
+const AnimatedTitle = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) => {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: true });
 

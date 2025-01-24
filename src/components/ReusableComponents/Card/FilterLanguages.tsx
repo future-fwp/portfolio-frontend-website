@@ -1,4 +1,3 @@
-
 const FilterLanguagesButton = ({
 	languages,
 	icon,
@@ -12,18 +11,17 @@ const FilterLanguagesButton = ({
 }) => {
 	return (
 		<button
-			onClick={onClick}
-			className="cursor-pointer "
+			onClick={onClick} // onClick is attached to the entire button
+			className={`group group-hover:cursor-pointer flex border p-4 rounded-lg gap-2 justify-center filtercard items-center w-full ${
+				isSelected ? "bg-white text-black" : ""
+			}`}
 		>
-			<div
-				className={`flex justify-center filtercard md:justify-between items-center ${
-					isSelected ? "bg-white text-black" : ""
-				}`}
-			>
-				<div>{languages}</div>
-				{icon && <div className="relative ">{icon}</div>}
-				{!icon && <img src={icon} />}
-			</div>
+			{icon && (
+				<div className="relative gap-2 md:gap-4 flex justify-center items-center cursor-pointer">
+					{languages}
+					{icon}
+				</div>
+			)}
 		</button>
 	);
 };

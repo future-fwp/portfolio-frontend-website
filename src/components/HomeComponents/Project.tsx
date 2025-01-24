@@ -1,11 +1,11 @@
-import { useState,  } from "react";
+import { useState } from "react";
 
-import { projects, techStack } from "../utils/data";
+import { projects, techStack } from "../../libs/data";
 import CardProject from "../ReusableComponents/Card/CardProject";
 import FilterLanguagesButton from "../ReusableComponents/Card/FilterLanguages";
 import "./styled/FilterCardSvgIcon.css";
 import TriangleRotate140deg from "../ReusableComponents/Geometry/TriangleRotate140deg";
-import { motion,AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Project = () => {
 	const [selectedTechStack, setSelectedTechStack] = useState<string[]>([]);
@@ -32,11 +32,14 @@ const Project = () => {
 	// If you don't have a unique ID, you can use the project title, BUT be very careful that project titles are actually unique.
 
 	return (
-		<main className="max-w-[1200px] px-6 py-10 mx-auto relative">
+		<main
+			className="max-w-[1200px] px-6 py-10 mx-auto relative"
+			id="project"
+		>
 			<TriangleRotate140deg addlayout="" />
 			<section className="text-center mb-5 w-full">
 				<div className="pb-[1rem]">
-					<h2 className="pb-[1rem]">Project title</h2>
+					<h2 className="pb-[1rem]">Project</h2>
 					<p className="">Explore my stunning project</p>
 				</div>
 
