@@ -24,13 +24,10 @@ To run this project locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-2. Navigate to the project directory:
-   ```bash
-   cd portfolio-frontend-website
-
-3. Install the dependencies:
+   
+2. Install the dependencies:
    ```bash
    npm install
-4.  Start the development server
-```npm run dev
+3.  Start the development server
+```npm run dev```
 
