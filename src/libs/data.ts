@@ -11,9 +11,16 @@ import {
 	JSIcon,
 	Typescript,
 	NextJSIcon,
+	RestAPIIcon,
 } from "../components/assets/Icontechstack/TechStackIcon";
-import MockProjectPicture from "../assets/pink-7761356_1280.png";
+
 import { GitHubIcon, LinkedIn, Phone } from "../components/assets/Footer/Contact";
+import PictureQuiz from "../assets/Screenshot 2568-01-24 at 18.57.50.png";
+import TravelQuiz from "../assets/Screenshot 2568-01-24 at 19.20.52.png";
+import LandingPage from "../assets/Screenshot 2568-01-24 at 19.39.01.png";
+import YoutubePage from "../assets/Screenshot 2568-01-24 at 19.50.00.png";
+import FoodRecipePage from "../assets/Screenshot 2568-01-24 at 20.03.48.png";
+import NextjsBlog from "../assets/Screenshot 2568-01-24 at 20.14.35.png";
 
 export const Achievements = [
 	{
@@ -46,7 +53,7 @@ export const techStack = [
 	},
 	{
 		name: "RestAPI",
-		icon: JestIcon,
+		icon: RestAPIIcon,
 		type: "Testing",
 	},
 	{
@@ -93,35 +100,35 @@ export const projects = [
 		description: `A clone of YouTube's homepage with video playback functionality and a responsive design.`,
 		techStack: ["RestAPI", "React", "TailwindCSS", "Vitest"],
 		link: ["https://youtubeclonefuturefwp.netlify.app", "https://github.com/future-fwp/youtube-clone-project"],
-		imagePreview: MockProjectPicture,
+		imagePreview: YoutubePage,
 	},
 	{
 		project: "landing page",
 		description: "A responsive landing page for a fictional product or service.",
 		techStack: ["React", "TailwindCSS", "Jest"],
 		link: ["https://landing-page-a8f4d6.netlify.app/", "https://github.com/future-fwp/landing-page.git"],
-		imagePreview: MockProjectPicture,
+		imagePreview: LandingPage,
 	},
 	{
 		project: "Food recipe",
 		description: "A platform for sharing and discovering delicious recipes from around the world.",
 		techStack: ["React", "Jest", "TailwindCSS"],
 		link: ["https://food-recipe-b3dd6e.netlify.app/", "https://github.com/future-fwp/food-recipe.git"],
-		imagePreview: MockProjectPicture,
+		imagePreview: FoodRecipePage,
 	},
 	{
 		project: "Quiz App",
 		description: "An interactive quiz application with multiple categories and scoring system.",
 		techStack: ["RestAPI", "React", "TailwindCSS", "Jest"],
 		link: ["https://react-quiz-app-06f3a7.netlify.app/", "https://github.com/future-fwp/quiz.git"],
-		imagePreview: MockProjectPicture,
+		imagePreview: PictureQuiz,
 	},
 	{
 		project: "Next.js Blog",
 		description: "A responsive landing page for a fictional product or service.",
 		techStack: ["Next.js", "React", "TailwindCSS", "RestAPI", "Jest"],
 		link: ["https://nextjs-blog-cf9e11.netlify.app/", "https://github.com/future-fwp/nextjs-blog"],
-		imagePreview: MockProjectPicture,
+		imagePreview: NextjsBlog,
 	},
 	{
 		project: "Travel website",
@@ -131,7 +138,7 @@ export const projects = [
 			"https://travel-website-a3bfc0.netlify.app/",
 			"https://github.com/future-fwp/travel-website?tab=readme-ov-file",
 		],
-		imagePreview: MockProjectPicture,
+		imagePreview: TravelQuiz,
 	},
 ];
 

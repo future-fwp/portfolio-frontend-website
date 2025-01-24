@@ -26,19 +26,19 @@ const CardProject: React.FC<Props> = ({ titleProject, description, TechStack, li
 				<Link
 					to={linkDeployedWebsite[0]}
 					target="_blank"
-					className="absolute cursor-pointer -translate-x-[1.25rem] hidden group-hover:block -z-10 group-hover:z-[100] inset-x-1/2 inset-y-1/2"
+					className="absolute cursor-pointer -translate-x-[1.25rem] hidden group-hover:block -z-10 group-hover:z-[100] inset-x-1/2 inset-y-1/2 -translate-y-1/2"
 				>
 					<ExternalLink className="size-7" />
 				</Link>
 				<Link
 					to={linkDeployedWebsite[1]}
 					target="_blank"
-					className="absolute cursor-pointer translate-x-[1.25rem] hidden group-hover:block -z-10 group-hover:z-[100] inset-x-1/2 inset-y-1/2"
+					className="absolute cursor-pointer translate-x-[1.25rem] hidden group-hover:block -z-10 group-hover:z-[100] inset-x-1/2 inset-y-1/2 -translate-y-1/2"
 				>
 					<Github className="size-7" />
 				</Link>
 				<img
-					className="block w-full h-full object-cover duration-500 ease-in-out group-hover:scale-125" // group-hover applied here
+					className="block w-full h-full object-cover duration-500 ease-in-out group-hover:scale-105" // group-hover applied here
 					src={preview}
 					alt={titleProject}
 				/>
