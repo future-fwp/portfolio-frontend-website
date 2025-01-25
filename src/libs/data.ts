@@ -165,7 +165,7 @@ export const Experience = [
 	{
 		year: "Jun 2023 to Aug 2023",
 		role: "Frontend developer internship",
-		experience: `Completed an internship in computer engineering, focusing on programming and software development with senior full stack developer in Wisesight company.
+		experience: `Completed an internship in computer engineering, focusing on programming and software development with senior full stack developer who worked in Wisesight company.
 `,
 	},
 	{
