@@ -43,7 +43,7 @@ const Project = () => {
 					<p className="">Explore my stunning project</p>
 				</div>
 
-				<ul className="md:flex md:gap-2 grid gap-3 grid-cols-2 sm:grid-cols-4 md:justify-center">
+				<ul className="md:flex md:flex-wrap md:gap-2 grid gap-3 grid-cols-2 sm:grid-cols-4 md:justify-center">
 					{techStack.map((tech) => (
 						<FilterLanguagesButton
 							key={tech.name}

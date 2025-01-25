@@ -12,7 +12,7 @@ const FilterLanguagesButton = ({
 	return (
 		<button
 			onClick={onClick} // onClick is attached to the entire button
-			className={`group group-hover:cursor-pointer flex border p-4 rounded-lg gap-2 justify-center filtercard items-center w-full ${
+			className={`group group-hover:cursor-pointer flex border p-4 rounded-lg gap-2 justify-center filtercard items-center ${
 				isSelected ? "bg-white text-black" : ""
 			}`}
 		>
