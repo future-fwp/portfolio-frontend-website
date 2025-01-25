@@ -133,7 +133,7 @@ export const projects = [
 	{
 		project: "Travel website",
 		description: "A responsive landing page for a fictional product or service.",
-		techStack: ["Next.js", "React", "TailwindCSS", "RestAPI", "Jest"],
+		techStack: [ "React", "TailwindCSS",  "Jest"],
 		link: [
 			"https://travel-website-a3bfc0.netlify.app/",
 			"https://github.com/future-fwp/travel-website?tab=readme-ov-file",
