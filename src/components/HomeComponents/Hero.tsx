@@ -40,9 +40,7 @@ const Hero = () => {
 						</h3>
 						<h3 className="text-justify !text-lg [text-align-last:left] indent-10">
 							Proficient in testing with Jest and experienced in collaborative projects like the event management
-							platform for oddsandends web development. Experienced in collaborative projects, including
-							developing an event management platform for Odds&Ends. Excited to bring a unique perspective and a
-							strong commitment to crafting impressive user interfaces and seamless user experiences.
+							platform for oddsandends web development.
 						</h3>
 					</div>
 
