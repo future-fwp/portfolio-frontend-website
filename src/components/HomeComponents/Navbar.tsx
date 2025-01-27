@@ -4,8 +4,8 @@ const Navbar = () => {
 	const [open, setOpen] = useState(false);
 
 	return (
-		<>
-			<nav className="flex justify-between items-center max-w-[1200px] mx-auto px-4 py-4">
+		<nav className="sticky top-0 bg-black z-[9999] w-full">
+			<div className="flex  justify-between items-center max-w-[1200px] mx-auto px-4 py-4">
 				<div className="logo">
 					<h2>MyFuturePortfolio</h2>
 				</div>
@@ -48,7 +48,7 @@ const Navbar = () => {
 						/>
 					</svg>
 				</div>
-			</nav>
+			</div>
 
 			<ul
 				id="panel"
@@ -72,7 +72,7 @@ const Navbar = () => {
 					<a href="#footer">Contact me</a>
 				</li>
 			</ul>
-		</>
+		</nav>
 	);
 };
 
